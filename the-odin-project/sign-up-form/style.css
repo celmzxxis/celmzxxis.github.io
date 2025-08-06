@@ -1,0 +1,205 @@
+@font-face {
+    font-family: 'Norse Bold';
+    src: url(Norse-Bold.otf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body, html{
+    height: 100%;   
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+} */
+
+body{
+    display: flex;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.main{
+    height: 100vh;
+    display: flex;
+}
+
+img{
+    height: 100vh;
+    width:  28vw;
+    min-width: 300px;
+}
+
+.left-side{
+    position: relative;
+    width: 28vw;
+    min-width: 300px;
+    
+
+}
+
+.left-side .logo-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width:100%;
+    height: 120px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    top: 100px;
+    color: white;
+    gap: 10px;
+
+}
+
+.logo{
+    height: 90px;
+    width:auto;
+    object-fit: contain;
+}
+
+.logo-container .text{
+    font-family: 'Norse Bold';
+    margin-left: -120px;
+    font-size: 60px;
+}
+
+.left-side .photo-credit{
+    bottom: 20px;
+    left: 110px;
+    position: absolute;
+    color: white;
+    font-size: 12px;
+}
+
+.photo-credit a{
+    color: white;
+}
+
+.right-side{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    
+}
+
+.header{
+    background-color: rgb(245, 236, 236) ;
+    font-family: 'Inter';
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 1.1em;
+    height: 35vh;
+    padding: 20px;
+    padding-top: 5px;
+
+}
+
+.header .one{
+    max-width: 60%;
+    margin: 50px 50px 0 0;
+    font-size: 0.9em;
+}
+
+.header .two{
+    margin-bottom: 20px;
+    font-size: 0.9em;
+}
+
+.header .three{
+    margin-bottom: 20px;
+    font-size: 0.9em;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+form .entries{
+    background-color: white;
+    font-family: 'Inter';
+    font-weight: 300;
+    font-size: 0.9em;
+    padding: 15px 30px;
+    line-height: 1.25;
+}
+
+form .banner{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+form div.input-grid div{
+    display: flex;
+    flex-direction: column;
+}
+
+form div.input-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+form label{
+    font-size: 0.75em;
+    /* font-weight: lighter; */
+    /* opacity: 0.6; */
+    margin-bottom: 5px;
+}
+
+input{
+    width: 60%;
+    padding: 5px;
+    font-family: 'Inter';
+}
+
+input:focus{
+    outline: none;
+    border: 1px solid blue;
+    
+}
+
+input:invalid{
+    border: 1px solid red;
+}
+
+.entries{
+    margin-bottom: 20px;
+}
+
+.submit{
+    background-color: rgb(245, 236, 236) ;
+    padding: 30px;
+    flex: 1;
+    border-top: 0.5px solid  rgb(245, 236, 236);
+    box-shadow:0 0 6px 0.5px  rgb(159, 156, 156) ;
+
+}
+
+.submit button{
+    background-color: #596D48;
+    margin-top: 0;
+    padding: 0.7em 2.8em;
+    color: white;
+    font-family: 'Inter';
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    border: 1px solid #596D48;
+    position: relative;
+    top: -10px;
+    box-shadow: 0 0 6px 0.5px rgb(159, 156, 156);
+}
+
+.submit p{
+    font-family: 'Inter';
+
+}
+
+
